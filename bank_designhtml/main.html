@@ -1,0 +1,272 @@
+<html>
+    <head>
+
+         <link rel="stylesheet" href="framework.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .main_bank_panel{
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                text-align:center;
+                width:80%;
+                right:0;left:0;
+                margin:auto;
+                height:80%;
+                background-color: #F7BC28;
+                border-radius:25px;
+                background-image: linear-gradient(#F2DFCC,#BCB1A9);
+            }
+            .main_button{
+                background-color:#ff00ff blur(50);
+                background-image: radial-gradient(circle,#D9D9D9, #F0F0F0);
+                filter: blur(0.7px);
+                width:60px;
+                height:60px;
+                position:absolute;
+                left:4%;
+                top:25%;
+                border-radius:15px; 
+                font-size: 24px;
+                border: 0;
+            }
+            .deposit_button{
+                background-color:#ff00ff blur(50);
+                background-image: radial-gradient(circle,#D9D9D9 17px, #F0F0F0);
+                filter: blur(0.7px);
+                width:60px;
+                height:60px;
+                position:absolute;
+                left:4%;
+                top:40%;
+                border-radius:15px; 
+                font-size: 24px;
+                border: 0;
+            }
+            .send_button{
+                background-color:#ff00ff blur(50);
+                background-image: radial-gradient(circle,#D9D9D9, #F0F0F0);
+                filter: blur(0.7px);
+                width:60px;
+                height:60px;
+                position:absolute;
+                left:4%;
+                top:55%;
+                border-radius:15px; 
+                font-size: 24px;
+                border: 0;
+            }
+            .cripto_button{
+                background-color:#ff00ff blur(50);
+                background-image: radial-gradient(circle,#D9D9D9, #F0F0F0);
+                filter: blur(0.7px);
+                width:60px;
+                height:60px;
+                position:absolute;
+                left:4%;
+                top:70%;
+                border-radius:15px; 
+                font-size: 24px;
+                border: 0;
+            }
+            .exit_button{
+                background-color:#ff00ff blur(50);
+                background-image: radial-gradient(circle,#D9D9D9, #F0F0F0);
+                filter: blur(0.7px);
+                width:60px;
+                height:60px;
+                position:absolute;
+                left:4%;
+                top:85%;
+                border-radius:15px; 
+                font-size: 24px;
+                border: 0;
+            }
+
+            .profile_img {
+                background-color:#ff00ff blur(50);
+                width: 90px;
+                height: 90px;
+                position:absolute;
+                left:2.5%;
+                top:5%;
+                border-radius:90px; 
+                border: 2px solid #8000bf;
+            } 
+            .money_balance_title {
+                width:350px;
+                height:60px;
+                position:absolute;
+                left:65%;
+                top:5%;
+                font-size: 42px;
+                font-family: fantasy;
+                text-align: right;
+                color: #8000bf;
+                  text-overflow: ellipsis;
+            }
+            .money {
+                width:350px;
+                height:60px;
+                position:absolute;
+                left:81%;
+                top:18%;
+                font-size: 52px;
+                font-family: "Roboto";
+                text-align: right;
+                color: rgb(37, 112, 37);
+                transform: translate(-50%, -50%);
+                display: block;
+                letter-spacing: 8px;
+                cursor: pointer;
+            }
+            .scroll_bar_history{
+                width:350px;
+                height:400px;
+                position:absolute;
+                left:25%;
+                top:59%;
+                transform: translate(-50%, -50%);
+                overflow:auto;
+                border-radius: 10px;
+
+            }
+            ::-webkit-scrollbar {
+                width: 12px;
+                height: 12px;
+            }
+            ::-webkit-scrollbar-track {
+                border: 1px;
+                border-radius: 10px;
+            }
+            .change_balance_img {
+                background-color:#ff00ff blur(50);
+                width: 45px;
+                height: 45px;
+                position:absolute;
+                left: 5%;
+                border-radius:90px; 
+                border: 2px solid #8000bf;
+            }
+            .iban_adress {
+                width:350px;
+                height:60px;
+                position:absolute;
+                left:81%;
+                top:30%;
+                font-size: 18px;
+                font-family: sans-serif;
+                text-align: right;
+                color: rgb(255,255,255);
+                transform: translate(-50%, -50%);
+                display: block;
+                cursor: pointer;
+            }
+            .withdraw_edit{
+                background-color:#ff00ff blur(50);
+                background-image: radial-gradient(circle,#D9D9D9, #F0F0F0);
+                filter: blur(0.7px);
+                width:220px;
+                height:30px;
+                position:absolute;
+                left:79%;
+                top:30%;
+                border-radius:15px; 
+                font-size: 24px;
+                border: 0;
+                text-align: center;
+            }
+            .withdraw_button{
+                background-color:#ff00ff blur(50);
+                background-image: radial-gradient(circle,#D9D9D9, #F0F0F0);
+                filter: blur(0.7px);
+                width:220px;
+                height:30px;
+                position:absolute;
+                left:79%;
+                top:38%;
+                border-radius:15px; 
+                font-size: 24px;
+                border: 0;
+                text-align: center;
+                color: #8000bf;
+            }
+            .graphic_img{
+                width: 400px;
+                height: 360px;
+                position:absolute;
+                left: 44%;
+                top: 35%;
+                border-radius:15px; 
+            }
+    </style>
+    </head>
+    <body>
+        <div class="main_bank_panel">
+            <img class="profile_img" src="https://cdn.discordapp.com/attachments/992856418363375766/1050115161417064509/wp7076146.png"></img>
+            <button class="main_button">
+                <i class="fa fa-home" style ="position: absolute;top: 30%;left: 32%;color: #8000bf;"></i>
+            </button>
+            <button class="deposit_button">
+                <i class="fa fa-plus-circle" style ="position: absolute;top: 31%;left: 32%;color: #8000bf;"></i>
+            </button>
+            <button class="send_button">
+                <i class="fa fa-send" style ="position: absolute;top: 30%;left: 28%;color: #8000bf;"></i>
+            </button>
+            <button class="cripto_button">
+                <i class="fa fa-database" style ="position: absolute;top: 30%;left: 32%;color: #8000bf;"></i>
+            </button>
+            <button class="exit_button">
+              <i class="fa fa-sign-out" style ="position: absolute;top: 30%;left: 32%;color: #8000bf;"></i>
+            </button>
+            <a class="money_balance_title">Balance</a>
+            <a class="money">1967$</a>
+            <h1 class="title_bank"><span>Meta Bank & Exchange</span></h1>
+            <div class ="scroll_bar_history">
+                <img class="change_balance_img" src="https://cdn.discordapp.com/attachments/992856418363375766/1050350399753826354/gigachad.png"></img>
+                <a style="position:absolute;left:25%;top:3%;color:green;font-family:Roboto;">Davetsiz sent money</a>
+                <a style="position:absolute;left:75%;top:2%;color:green;font-family:Roboto;font-size: 25px;">1967$</a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <img class="change_balance_img" src="https://cdn.discordapp.com/attachments/992856418363375766/1050350399753826354/gigachad.png"></img>
+                <a style="position:absolute;left:25%;top:22%;color:red;font-family:Roboto;">Sent to Davetsiz</a>
+                <a style="position:absolute;left:75%;top:21%;color:red;font-family:Roboto;font-size: 25px;">1967$</a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <img class="change_balance_img" src="https://media.discordapp.net/attachments/992856418363375766/1050351286672949339/resim_2022-12-08_130045507-removebg-preview.png"></img>
+                <a style="position:absolute;left:25%;top:41%;color:green;font-family:Roboto;">Clan Salary</a>
+                <a style="position:absolute;left:75%;top:40%;color:green;font-family:Roboto;font-size: 25px;">500$</a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <img class="change_balance_img" src="https://cdn.discordapp.com/attachments/992856418363375766/1050352064431128577/829464.png"></img>
+                <a style="position:absolute;left:25%;top:60%;color:red;font-family:Roboto;">Car Tax</a>
+                <a style="position:absolute;left:75%;top:59%;color:red;font-family:Roboto;font-size: 25px;">500$</a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <img class="change_balance_img" src="https://cdn.discordapp.com/attachments/992856418363375766/1050352489091833906/2942931.png"></img>
+                <a style="position:absolute;left:25%;top:78%;color:green;font-family:Roboto;">Job Salary</a>
+                <a style="position:absolute;left:75%;top:77%;color:green;font-family:Roboto;font-size: 25px;">500$</a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <img class="change_balance_img" src="https://cdn.discordapp.com/attachments/992856418363375766/1050353416163053660/2927347.png"></img>
+                <a style="position:absolute;left:25%;top:96%;color:red;font-family:Roboto;">Food Expenditure</a>
+                <a style="position:absolute;left:75%;top:95%;color:red;font-family:Roboto;font-size: 25px;">500$</a>
+            </div>
+            <a class="iban_adress">IBAN : META-001967</a>
+            <input class="withdraw_edit"></input>
+            <button class="withdraw_button"><i class="fa fa-folder" style ="position: absolute;top: 12%;left: 15%;color: #8000bf;"></i>Withdraw</button>
+            <img class="graphic_img" src="https://cdn.discordapp.com/attachments/992856418363375766/1050362450190536755/o_india_axis-bank-net-interest-income.png"></img>
+        </div>
+    </body>              
+    <script src="framework.js"></script>
+</html>

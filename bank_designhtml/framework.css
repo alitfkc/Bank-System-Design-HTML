@@ -1,0 +1,249 @@
+.main_button:hover{
+    width:60px;
+    height:60px;
+    position:absolute;
+    left:4%;
+    top:25%;
+    border-radius:15px; 
+    box-shadow: -5px 8px 24px -10px rgba(75, 0, 130, 0.2), 5px 12px 40px 5px rgba(75, 0, 130, 0.19);
+}
+.deposit_button:hover {
+    width:60px;
+    height:60px;
+    position:absolute;
+    left:4%;
+    top:40%;
+    border-radius:15px; 
+    font-size: 24px;
+    box-shadow: -5px 8px 24px -10px rgba(75, 0, 130, 0.2), 5px 12px 40px 5px rgba(75, 0, 130, 0.19);
+}
+.send_button:hover{
+    width:60px;
+    height:60px;
+    position:absolute;
+    left:4%;
+    top:55%;
+    border-radius:15px; 
+    font-size: 24px;
+    box-shadow: -5px 8px 24px -10px rgba(75, 0, 130, 0.2), 5px 12px 40px 5px rgba(75, 0, 130, 0.19);
+}
+.cripto_button:hover{
+    width:60px;
+    height:60px;
+    position:absolute;
+    left:4%;
+    top:70%;
+    border-radius:15px; 
+    font-size: 24px;
+    box-shadow: -5px 8px 24px -10px rgba(75, 0, 130, 0.2), 5px 12px 40px 5px rgba(75, 0, 130, 0.19);
+}
+.exit_button:hover{
+    width:60px;
+    height:60px;
+    position:absolute;
+    left:4%;
+    top:85%;
+    border-radius:15px; 
+    font-size: 24px;
+    box-shadow: -5px 8px 24px -10px rgba(75, 0, 130, 0.2), 5px 12px 40px 5px rgba(75, 0, 130, 0.19);
+}
+
+.profile_img:hover {
+    width: 90px;
+    height: 90px;
+    position:absolute;
+    left:2.5%;
+    top:5%;
+    border-radius:90px; 
+    box-shadow: -5px 8px 24px -10px rgba(75, 0, 130, 0.2), 5px 12px 40px 5px rgba(75, 0, 130, 0.19);
+}
+
+.withdraw_button:hover{
+    background-color:#ff00ff blur(50);
+    background-image: radial-gradient(circle,#D9D9D9, #F0F0F0);
+    filter: blur(0.7px);
+    width:220px;
+    height:30px;
+    position:absolute;
+    left:79%;
+    top:38%;
+    border-radius:15px; 
+    font-size: 24px;
+    border: 0;
+    text-align: center;
+    color: #8000bf;
+    box-shadow: -5px 8px 24px -10px rgba(75, 0, 130, 0.2), 5px 12px 40px 5px rgba(75, 0, 130, 0.19);
+}
+.money_balance_title:hover {
+    width:350px;
+    height:60px;
+    position:absolute;
+    left:65%;
+    top:5%;
+    font-size: 42px;
+    font-family: "Roboto";
+    text-align: right;
+    color: #8000bf;
+    transition:.6s;
+    transform:translate(-5px,-5px);
+    text-shadow:
+    1px 1px,
+    2px 2px,
+    3px 3px,
+    4px 4px,
+    5px 5px,
+    6px 6px,
+    7px 7px,
+    8px 8px,
+    9px 9px,
+    10px 10px;
+    -webkit-mask:repeating-linear-gradient(25deg, transparent 0 1px, rgba(0,0,0,0.5) 0 4px);
+    mask:repeating-linear-gradient(25deg, transparent 0 1px, rgba(0,0,0,0.5) 0 4px);
+    display:table;    
+}
+
+.money::before {
+    content: "1967$";
+    position: absolute;
+    color: transparent;
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent 0,
+      transparent 2px,
+      white 2px,
+      white 4px
+    );
+    -webkit-background-clip: text;
+    top: 0;
+    left: 46.5%;
+    z-index: -1;
+    transition: 1s;
+  }
+  
+  .money::after {
+    content: "1967$";
+    position: absolute;
+    color: transparent;
+    background-image: repeating-linear-gradient(
+      135deg,
+      transparent 0,
+      transparent 2px,
+      white 2px,
+      white 4px
+    );
+    -webkit-background-clip: text;
+    top: 0;
+    left: 46.5%;
+    transition: 1s;
+  }
+  
+  .money:hover:before {
+    top: 6%;
+    left: 52%;
+  }
+  
+  .money:hover:after {
+    top: -6%;
+    left: 44%;
+  } 
+
+  @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+  .money_balance_title {
+	margin: auto;
+}
+
+.money_balance_title {
+	font-size: 6rem;
+}
+
+
+.money_balance_title {
+	text-shadow: -0.01em -0.01em 0.01em #000;
+	animation: rise 2s ease-in-out 0.5s forwards;
+}
+
+@keyframes rise {
+	to {
+		text-shadow: 0em 0.01em rgb(85, 0, 104), 0em 0.02em rgb(85, 0, 104), 0em 0.02em 0.03em rgb(85, 0, 104),
+			-0.01em 0.01em #333, -0.02em 0.02em #333, -0.03em 0.03em #333,
+			-0.04em 0.04em #333, -0.01em -0.01em 0.03em #000, -0.02em -0.02em 0.03em #000,
+			-0.03em -0.03em 0.03em #000;
+		transform: translateY(-0.025em) translateX(0.04em);
+	}
+}
+
+.outline {
+	background-clip: text;
+	color: #ffdd40;
+	animation: outline 1s ease-in-out 1.5s forwards;
+}
+
+@keyframes outline {
+	from {
+		text-shadow: 0em -7em 10em #fff;
+	}
+	to {
+		text-shadow: 0 0.02em #fff, 0.02em 0 #fff, -0.02em 0 #fff, 0 -0.02em #fff;
+	}
+}
+
+:root {
+    --hs: 225, 100%;
+    --paper: hsl(var(--hs), 25%);
+    --highlight: hsl(var(--hs), 45%);
+    --shadow: hsl(var(--hs), 15%);
+  }
+  
+  .title_bank {
+    font-family: "Titillium Web", sans-serif;
+    top: 3%;
+    left: 22%;
+    position: absolute;
+    font-size: 45px;
+    letter-spacing: 6px;
+    display: grid;
+    place-items: center;
+    grid-template-areas: "text";
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-image: linear-gradient(305deg, green, #8000bf, cyan);
+    margin: 0;
+  
+    & > *,
+    .title_bank::after {
+      grid-area: text;
+    }
+  
+    .title_bank::after {
+      content: attr(data-text);
+      color: var(--paper);
+      transform: translate(0.1em, 0.1em);
+      filter: drop-shadow(0.015em 0.015em 0.025em var(--shadow));
+      -webkit-background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(var(--highlight), var(--paper));
+    }
+  }
+  
+  .scroll_bar_history::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    border-radius: 100px;
+  }
+  .graphic_img:hover{
+    width: 400px;
+    height: 360px;
+    position:absolute;
+    left: 44%;
+    top: 35%;
+    border-radius:15px; 
+    transform: skew(-15deg,1deg);
+    transition: 1s;
+}
+
+
+
+
+
